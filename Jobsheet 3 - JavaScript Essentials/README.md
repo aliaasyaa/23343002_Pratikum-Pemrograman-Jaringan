@@ -1,4 +1,4 @@
-# 🟡 JobSheet 4 – JavaScript Essentials
+# 🟡 JobSheet 3 – JavaScript Essentials
 
 ## 👤 Identitas
 - **Nama** : Aisya Alia  
@@ -8,7 +8,7 @@
 ---
 
 ## 🎯 Tujuan Pembelajaran
-JobSheet 4 bertujuan untuk:
+JobSheet 3 bertujuan untuk:
 - Memahami konsep dasar bahasa pemrograman JavaScript  
 - Mengetahui peran JavaScript dalam pengembangan aplikasi berbasis jaringan  
 - Mengenal JavaScript sebagai teknologi inti dalam pengembangan web modern  
@@ -41,7 +41,7 @@ Mahasiswa mempelajari materi secara bertahap dan mengerjakan latihan yang tersed
 ---
 
 ## 🔄 Alur Pembelajaran
-Alur pembelajaran JobSheet 4 adalah sebagai berikut:
+Alur pembelajaran JobSheet 3 adalah sebagai berikut:
 1. Mengakses platform pembelajaran JavaScript Essentials  
 2. Melakukan login menggunakan akun yang telah terdaftar  
 3. Mempelajari materi JavaScript secara bertahap  
@@ -61,4 +61,4 @@ JavaScript menjadi fondasi utama dalam pengembangan aplikasi jaringan berbasis w
 ---
 
 ## ✅ Kesimpulan
-Melalui JobSheet 4 ini, mahasiswa memperoleh pemahaman dasar mengenai JavaScript dan perannya dalam pengembangan aplikasi berbasis jaringan. JavaScript Essentials memberikan pembelajaran terstruktur yang membantu mahasiswa memahami konsep, implementasi, serta alur pembelajaran JavaScript sebagai teknologi inti web modern.
+Melalui JobSheet 3 ini, mahasiswa memperoleh pemahaman dasar mengenai JavaScript dan perannya dalam pengembangan aplikasi berbasis jaringan. JavaScript Essentials memberikan pembelajaran terstruktur yang membantu mahasiswa memahami konsep, implementasi, serta alur pembelajaran JavaScript sebagai teknologi inti web modern.
