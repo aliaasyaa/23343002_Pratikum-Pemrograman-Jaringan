@@ -24,5 +24,3 @@ Praktikum ini bertujuan untuk:
 - Terminal / Command Prompt  
 
 ---
-
-## 📂 Struktur Folder
