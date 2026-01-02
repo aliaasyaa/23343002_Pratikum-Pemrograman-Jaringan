@@ -1,0 +1,753 @@
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+    text-align: center;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 250px;
+}
+
+input {
+    border: 2px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 0px solid #cccccc;
+    background: #888888;
+    color: white;
+    padding: 9px;
+}
+
+/* ===== STYLE LAMA (Bisa dihapus jika tidak dipakai) ===== */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about-header h2 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+.about-content {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.about-section {
+    margin-bottom: 30px;
+}
+.about-section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+.about-section p {
+    line-height: 1.6;
+    color: #555;
+}
+.about-section ul {
+    padding-left: 20px;
+}
+.about-section li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+.tech-tag {
+    background: #3498db;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.help-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.help-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+.faq-section {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.faq-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.faq-item h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+.faq-item p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+.faq-item ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.faq-item li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+/* ===== AKHIR STYLE LAMA ===== */
+
+
+/* ======================================== */
+/* === KODE CSS GABUNGAN (DARK TEAL) === */
+/* ======================================== */
+
+/* Variabel Warna */
+:root {
+    --dark-teal: #3a5a5c;
+    --light-beige: #f3eee4;
+    --dark-beige: #e0d8c8;
+    --accent-orange: #d99a74;
+    --text-dark: #333333;
+}
+
+/* Style Umum untuk Halaman Dark Teal */
+.page-tentang,
+.page-bantuan {
+    background-color: var(--dark-teal);
+    color: var(--light-beige);
+}
+
+.page-tentang .main-content,
+.page-bantuan .main-content {
+    max-width: 100%;
+    padding: 0;
+}
+
+.page-tentang .main-content > header,
+.page-bantuan .main-content > header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.page-tentang .main-content > footer,
+.page-bantuan .main-content > footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.page-tentang header a,
+.page-bantuan header a {
+    color: var(--light-beige);
+}
+.page-tentang footer,
+.page-bantuan footer {
+    color: var(--light-beige);
+    border-top: 1px solid #5a7a7c;
+}
+.page-tentang .main-content > header h1,
+.page-bantuan .main-content > header h1 {
+    color: var(--light-beige);
+}
+
+
+/* ======================================== */
+/* === STYLE KHUSUS HALAMAN TENTANG === */
+/* ======================================== */
+
+/* ======= 1. Hero Section (Tentang) ======= */
+.page-tentang .hero-section-tentang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; 
+    min-height: 50vh; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.page-tentang .hero-text {
+    flex: 1;
+    z-index: 2; 
+    text-align: center; /* Ditambahkan agar center */
+}
+
+.page-tentang .hero-image {
+    flex-basis: 300px;
+    text-align: center;
+    z-index: 2; 
+}
+
+.page-tentang .hero-section-tentang .portrait {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 8px solid var(--light-beige);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.page-tentang .hero-section-tentang h1 {
+    font-size: 3.5rem;
+    color: var(--light-beige);
+    margin-bottom: 1rem;
+}
+
+.page-tentang .hero-section-tentang p {
+    font-size: 1.1rem;
+    color: var(--dark-beige);
+    line-height: 1.6;
+}
+
+.page-tentang .btn-tentang {
+    display: inline-block;
+    background-color: var(--accent-orange);
+    color: var(--text-dark);
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.page-tentang .btn-tentang:hover {
+    background-color: var(--light-beige);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-tentang .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(10px);
+    opacity: 0.3;
+    z-index: 1;
+}
+.page-tentang .blob1 {
+    width: 400px;
+    height: 400px;
+    background: var(--accent-orange);
+    top: -100px;
+    right: -100px;
+}
+.page-tentang .blob2 {
+    width: 250px;
+    height: 250px;
+    background: var(--dark-beige);
+    bottom: -50px;
+    left: 100px;
+}
+
+/* ======= 2. Skills Section (Tentang) ======= */
+.page-tentang .skills-section-tentang {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-tentang .skills-section-tentang h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--light-beige);
+    margin-bottom: 3rem;
+}
+
+.page-tentang .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.page-tentang .skill-item {
+    background: var(--light-beige);
+    color: var(--text-dark); 
+    padding: 2rem;
+    border-radius: 20px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.page-tentang .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.page-tentang .skill-item h3 {
+    font-size: 1.3rem;
+    color: var(--dark-teal); 
+    margin-bottom: 0.5rem;
+}
+
+.page-tentang .skill-item p {
+    color: #5a5a5a; 
+    line-height: 1.5;
+}
+
+/* ======= 3. Portfolio Section (Tentang) ======= */
+.page-tentang .portfolio-section-tentang {
+    background-color: var(--light-beige); 
+    color: var(--text-dark); 
+    padding: 4rem 2rem;
+    max-width: 100%; 
+}
+
+.page-tentang .portfolio-section-tentang h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--dark-teal); 
+    margin-bottom: 3rem;
+}
+
+.page-tentang .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-tentang .portfolio-item {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.page-tentang .portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Diubah agar logo tidak terpotong */
+}
+
+.page-tentang .portfolio-item h3 {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
+}
+
+.page-tentang .portfolio-item p {
+    color: #5a5a5a;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* ======= 4. Contact Section (Tentang) ======= */
+.page-tentang .contact-section-tentang {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-tentang .contact-section-tentang h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--light-beige);
+    margin-bottom: 1rem;
+}
+
+.page-tentang .contact-section-tentang p {
+    font-size: 1.1rem;
+    color: var(--dark-beige);
+    margin-bottom: 2rem;
+}
+
+.page-tentang .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* ======= Responsiveness (Tentang) ======= */
+@media (max-width: 768px) {
+    .page-tentang .hero-section-tentang {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .page-tentang .blob1 { top: -150px; }
+    .page-tentang .blob2 { display: none; }
+
+    .page-tentang .hero-section-tentang h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-tentang .skills-grid,
+    .page-tentang .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-tentang .contact-links {
+        flex-direction: column;
+    }
+}
+
+/* ======================================== */
+/* === KODE CSS BARU UNTUK HALAMAN BANTUAN === */
+/* ======================================== */
+
+.faq-hero-bantuan {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--dark-teal); 
+    border-bottom: 2px solid var(--dark-beige);
+}
+
+.faq-hero-bantuan h1 {
+    font-size: 3.5rem;
+    color: var(--light-beige);
+    margin-bottom: 0.5rem;
+}
+
+.faq-hero-bantuan p {
+    font-size: 1.2rem;
+    color: var(--dark-beige);
+    font-style: italic;
+}
+
+.faq-section-bantuan {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.faq-section-bantuan details {
+    background: var(--light-beige);
+    color: var(--text-dark);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--dark-beige);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section-bantuan summary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-teal);
+    padding: 1.5rem;
+    cursor: pointer;
+    list-style: none; 
+    position: relative;
+    padding-right: 40px; 
+}
+
+.faq-section-bantuan summary::after {
+    content: '+';
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--accent-orange);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.2s ease-out;
+}
+
+.faq-section-bantuan details[open] summary::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.faq-content {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    line-height: 1.6;
+    color: #5a5a5a;
+    border-top: 1px solid #e0d8c8;
+    margin: 0 1.5rem;
+}
+
+.faq-content p,
+.faq-content ul {
+    margin-bottom: 1rem;
+}
+
+.faq-content li {
+    margin-left: 1.5rem;
+}
+
+.faq-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+
+/* ======================================== */
+/* === KODE CSS BARU UNTUK HALAMAN BERITA === */
+/* ======================================== */
+
+.berita-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 kolom di HP */
+    gap: 1.5rem;
+}
+
+/* Tampilkan 3 kolom di layar besar */
+@media (min-width: 768px) {
+    .berita-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1000px) {
+    .berita-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.berita-card {
+    background: var(--light-beige);
+    color: var(--text-dark);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Agar gambar tidak keluar */
+}
+
+.berita-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.berita-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Memastikan semua kartu sama tinggi */
+}
+
+.berita-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-teal);
+    margin-bottom: 0.5rem;
+}
+
+.berita-content h3 a {
+    text-decoration: none;
+    color: var(--dark-teal);
+}
+.berita-content h3 a:hover {
+    text-decoration: underline;
+}
+
+.berita-sumber {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.berita-deskripsi {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #5a5a5a;
+    flex-grow: 1; /* Dorong sumber ke atas */
+}
+
+/* Style untuk pesan error */
+.berita-error {
+    background-color: var(--light-beige);
+    color: #d9534f; /* Warna error (merah) */
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d9534f;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ======================================== */
+/* === KODE CSS BARU UNTUK HALAMAN HOME === */
+/* ======================================== */
+
+/* Terapkan Latar Belakang Dark Teal ke Halaman Home */
+.page-home {
+    background-color: var(--dark-teal);
+    color: var(--light-beige);
+}
+
+/* Sesuaikan Header dan Footer di Halaman Home */
+.page-home .main-content {
+    max-width: 100%;
+    padding: 0;
+}
+.page-home .main-content > header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.page-home .main-content > footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.page-home header a {
+    color: var(--light-beige);
+}
+.page-home footer {
+    color: var(--light-beige);
+    border-top: 1px solid #5a7a7c;
+}
+.page-home .main-content > header h1 {
+    color: var(--light-beige);
+}
+
+/* Style Hero Section Halaman Home */
+.home-hero-section {
+    padding: 4rem 2rem;
+    max-width: 800px; /* Buat lebih fokus di tengah */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-hero-section .hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--light-beige);
+    margin-bottom: 1rem;
+}
+
+.home-hero-section .hero-content p {
+    font-size: 1.1rem;
+    color: var(--dark-beige);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+/* Style Form Pencarian Baru */
+.home-hero-section form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.home-hero-section form input {
+    flex-grow: 1; /* Input memanjang */
+    max-width: 400px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    border: 2px solid var(--dark-beige);
+    background: var(--light-beige);
+    color: var(--text-dark);
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.home-hero-section form input::placeholder {
+    color: #888;
+}
+
+.home-hero-section form button {
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--accent-orange);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.home-hero-section form button:hover {
+    background-color: var(--light-beige);
+}
+
+/* Style untuk Hasil Pencarian (pesan-1 dan pesan-2) */
+.hasil-cuaca-container {
+    background: var(--light-beige);
+    color: var(--text-dark);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+    /* Sembunyikan container sampai ada isinya */
+    display: none; 
+}
+
+/* Style untuk pesan-1 (Loading, Error, Lokasi) */
+#pesan-1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--dark-teal);
+    margin: 0;
+    padding: 0;
+}
+
+/* Style untuk pesan-2 (Hasil Cuaca) */
+#pesan-2 {
+    font-size: 1.1rem;
+    color: #5a5a5a;
+    line-height: 1.6;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+}
+
+/* CSS untuk menampilkan container saat ada hasil */
+.hasil-cuaca-container.show {
+    display: block;
+}

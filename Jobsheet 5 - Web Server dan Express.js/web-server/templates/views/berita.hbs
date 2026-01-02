@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+{{>head title="Berita"}}
+<body class="page-bantuan"> {{!-- Kita gunakan class 'page-bantuan' agar style-nya sama --}}
+    <div class="main-content">
+        {{>header}}
+
+        <section class="faq-hero-bantuan">
+            <h1>Berita Terkini</h1>
+            <p>Berita terbaru dari Indonesia, ditenagai oleh Mediastack API.</p>
+        </section>
+
+        <section class="faq-section-bantuan">
+            <div class="berita-container">
+
+                {{!-- Cek apakah ada error --}}
+                {{#if error}}
+                    <p class="berita-error">{{error}}</p>
+                {{/if}}
+
+                {{!-- Jika tidak ada error, loop data beritanya --}}
+                {{#each articles}}
+                <div class="berita-card">
+                    {{!-- Free plan mediastack sering tidak menyediakan gambar --}}
+                    {{#if image}}
+                    <img src="{{image}}" alt="Gambar Berita">
+                    {{/if}}
+                    
+                    <div class="berita-content">
+                        <h3>
+                            <a href="{{url}}" target="_blank">{{title}}</a>
+                        </h3>
+                        <p class="berita-sumber">Sumber: {{source}}</M>
+                        <p class="berita-deskripsi">{{description}}</p>
+                    </div>
+                </div>
+                {{/each}}
+                
+            </div>
+        </section>
+
+    </div>
+    {{>footer}}
+</body>
+</html>
