@@ -1,0 +1,14 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "- **Nama** : Aisya Alia  \r - **NIM**  : 23343002  \r - **Mata Kuliah** : Praktikum Pemrograman Jaringan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "postman-request": "^2.88.1-postman.47"
+  }
+}
