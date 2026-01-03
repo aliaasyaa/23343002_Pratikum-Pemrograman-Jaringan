@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+{{>head title="Bantuan"}}
+<body class="page-bantuan"> {{!-- Ini penting untuk styling --}}
+    <div class="main-content">
+        {{>header}}
+
+        <section class="faq-hero-bantuan">
+            <h1>Bantuan & FAQ</h1>
+            <p>Pertanyaan yang sering diajukan tentang aplikasi ini.</p>
+        </section>
+
+        <section class="faq-section-bantuan">
+
+            {{!-- Pertanyaan 1 --}}
+            <details>
+                <summary>Halaman ini digunakan untuk apa?</summary>
+                <div class="faq-content">
+                    <p>Halaman ini berisi daftar pertanyaan yang sering diajukan (Frequently Asked Questions) mengenai Aplikasi Cek Cuaca ini. Tujuannya adalah untuk memberikan informasi dan pemahaman teknis tentang cara kerja aplikasi serta teknologi yang digunakannya.</p>
+                </div>
+            </details>
+
+            {{!-- Pertanyaan 2 --}}
+            <details>
+                <summary>Apa itu API?</summary>
+                <div class="faq-content">
+                    <p>API adalah singkatan dari <strong>Application Programming Interface</strong>. Secara sederhana, API adalah 'jembatan' atau perantara yang memungkinkan dua aplikasi perangkat lunak berkomunikasi satu sama lain. Ia mengambil permintaan (request) dari satu aplikasi (misalnya, aplikasi cuaca kita), membawanya ke server penyedia data, mengambil jawaban (response) dari server itu, dan mengembalikannya ke aplikasi kita.</p>
+                </div>
+            </details>
+
+            {{!-- Pertanyaan 3 --}}
+            <details>
+                <summary>API apa yang digunakan dalam aplikasi ini?</summary>
+                <div class="faq-content">
+                    <p>Aplikasi ini menggunakan dua API eksternal utama untuk dapat berfungsi:</p>
+                    <ul>
+                        <li><strong>1. Mapbox API:</strong> API ini digunakan untuk proses <em>geocoding</em>. Ketika Anda memasukkan nama lokasi (contoh: "Jakarta"), Mapbox API mengubah teks tersebut menjadi data koordinat geografis (latitude dan longitude) yang presisi.</li>
+                        <li><strong>2. Weatherstack API:</strong> Setelah kita mendapatkan koordinat dari Mapbox, API inilah yang kita panggil untuk mendapatkan data prakiraan cuaca aktual di lokasi tersebut.</li>
+                    </ul>
+                </div>
+            </details>
+
+            {{!-- Pertanyaan 4 --}}
+            <details> {{!-- 'open' berarti ini terbuka secara default --}}
+                <summary>Salah satu pola arsitektur API adalah RESTful. Jelaskan.</summary>
+                <div class="faq-content">
+                    <p><strong>RESTful (Representational State Transfer)</strong> adalah gaya arsitektur yang paling populer untuk merancang API. API yang mengikuti gaya ini disebut RESTful API.</p>
+                    <p>Prinsip utamanya adalah komunikasi terjadi melalui protokol HTTP (seperti yang kita gunakan) dan bersifat <em>stateless</em> (server tidak perlu menyimpan informasi sesi klien). Ia menggunakan metode HTTP standar untuk berinteraksi dengan data:</p>
+                    <ul>
+                        <li><strong>GET:</strong> Untuk mengambil data (Contoh: mengambil info cuaca).</li>
+                        <li><strong>POST:</strong> Untuk mengirim data baru.</li>
+                        <li><strong>PUT/PATCH:</strong> Untuk memperbarui data yang ada.</li>
+                        <li><strong>DELETE:</strong> Untuk menghapus data.</li>
+                    </ul>
+                    <p>RESTful API biasanya menggunakan format data yang ringan dan mudah dibaca manusia seperti <strong>JSON (JavaScript Object Notation)</strong>, yang persis seperti yang kita buat dan gunakan pada <em>endpoint</em> <code>/infocuaca</code> di aplikasi ini.</p>
+                    
+                    {{!-- Instruksi UTS Anda meminta gambar  --}}
+                    <p><strong>Ilustrasi Cara Kerja API:</strong></p>
+                    <img src="/img/cekCuaca.png" alt="Diagram cara kerja API" class="faq-image">
+                    
+                </div>
+            </details>
+
+        </section>
+
+    </div>
+    {{>footer}}
+</body>
+</html>

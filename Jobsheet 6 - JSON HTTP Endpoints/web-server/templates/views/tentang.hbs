@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+{{>head title="Tentang Saya"}}
+<body class="page-tentang"> {{!-- INI PERUBAHAN PENTING --}}
+    <div class="main-content">
+        {{>header}}
+
+        <section class="hero-section-tentang">
+            
+            {{!-- Elemen Dekoratif --}}
+            <div class="blob blob1"></div>
+            <div class="blob blob2"></div>
+
+            <div class="hero-text">
+                <h1>Halo, Saya {{nama}}</h1>
+                <p>
+                    Saya adalah seorang mahasiswa Informatika di Universitas Negeri Padang dengan
+                    minat besar pada Web Development, UI/UX Design, dan Jaringan Komputer. 
+                    Saya selalu antusias untuk belajar teknologi baru dan mencari tantangan
+                    untuk mengaplikasikan ilmu yang saya dapatkan di perkuliahan guna
+                    menciptakan solusi digital yang fungsional dan bermanfaat.
+                </p>
+                <a href="#contact" class="btn-tentang">Hubungi Saya</a>
+            </div>
+            <div class="hero-image">
+                <img class="portrait" src="/img/me.png" alt="Foto Profil {{nama}}">
+            </div>
+        </section>
+
+        <section class="skills-section-tentang">
+            <h2>Keahlian Saya</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Frontend Development</h3>
+                    <p>Mahir dalam HTML, CSS, dan JavaScript. Berpengalaman menggunakan framework seperti Node.js dan Express.js seperti pada aplikasi ini.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Mampu merancang antarmuka yang bersih, modern, dan ramah pengguna menggunakan alat desain seperti Figma.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Backend Development</h3>
+                    <p>Memahami dasar-dasar backend, membuat RESTful API, dan mengintegrasikan database (misalnya MongoDB atau MySQL).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section-tentang">
+            <h2>Portfolio Proyek</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="/img/cekCuaca.png" alt="Gambar Proyek 1">
+                    <h3>Aplikasi Cek Cuaca</h3>
+                    <p>Aplikasi web dinamis yang dibuat dengan Node.js, Express, dan Handlebars, serta mengintegrasikan API eksternal (Mapbox & Weatherstack).</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x250/e6f0ff/888888?text=Proyek+2" alt="Gambar Proyek 2">
+                    <h3>Desain Web E-Commerce</h3>
+                    <p>Prototipe UI/UX untuk aplikasi e-commerce buku dengan fokus pada pengalaman pengguna yang intuitif.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/img/apk-rekomendasi.png" alt="Gambar Proyek 3">
+                    <h3>Saat ini saya sedang mengembangkan Apk Rekomendasi Buku</h3>
+                    <p>Aplikasi ini berfungsi untuk menampilkan daftar buku yang sesuai dengan minat dan preferensi pengguna 
+                        berdasarkan riwayat bacaan, genre favorit, dan ulasan yang diberikan. 
+                        Sistem rekomendasi ini membantu pengguna menemukan bacaan baru tanpa harus mencari secara manual.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section-tentang">
+            <h2>Hubungi Saya</h2>
+            <p>Anda dapat menemukan saya di platform berikut:</p>
+            <div class="contact-links">
+                <a href="https://github.com/aliaasyaa" target="_blank" class="btn-tentang">GitHub</a>
+                <a href="https://www.linkedin.com/in/aisya-alia-095578270/" target="_blank" class="btn-tentang">LinkedIn</a>
+                <a href="https://www.instagram.com/aliaasyaa_/" target="_blank" class="btn-tentang">Instagram</a>
+            </div>
+        </section>
+
+    </div>
+
+    {{>footer}}
+</body>
+</html>
