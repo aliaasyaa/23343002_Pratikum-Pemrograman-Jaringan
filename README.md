@@ -23,11 +23,8 @@ Setiap folder jobsheet berisi:
 
 **Mata Kuliah**    : Pemrograman Berbasis Jaringan  
 **Kode Kelas**     : 202513430091 - INF1.62.5010
-
 **Dosen Pengampu** : Randi Proska Sandra, S.Pd, M.Sc 
-
 **Tahun Ajaran**   : 2025  
-
 **Universitas**    : Universitas Negeri Padang 
 
 ---
