@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <div class="chat-container">
+    <div class="chat-header">💬 Ruang Obrolan</div>
+
+    <div id="messages" class="messages"></div>
+
+    <form id="message-form" class="chat-form">
+      <input id="message-input" placeholder="Ketik pesan..." autocomplete="off" />
+      <button>Kirim</button>
+      <button type="button" id="send-location" class="location-btn">📍</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
+</body>
+</html>
