@@ -15,17 +15,17 @@ Setiap folder jobsheet berisi:
 
 **Nama**           : Aisya Alia  
 **NIM**            : 23343002  
-**Program Studi**  : Informatika  
-**Semester**       : 5  
+**Program Studi**  : Informatika   
 
 ---
 
 ## 🎓 Informasi Mata Kuliah
 
 **Mata Kuliah**    : Pemrograman Berbasis Jaringan  
-**Dosen Pengampu** : (Sesuaikan dengan dosen)  
+**Kode Kelas**     : 202513430091 - INF1.62.5010
+**Dosen Pengampu** : Randi Proska Sandra, S.Pd, M.Sc 
 **Tahun Ajaran**   : 2025  
-**Universitas**    : (Isi nama universitas)  
+**Universitas**    : Universitas Negeri Padang 
 
 ---
 
@@ -42,23 +42,6 @@ Setiap folder jobsheet berisi:
 | 7 | Jobsheet 7 – Version Control dan App Deployment | Penggunaan Git, GitHub, dan deployment aplikasi. |
 | 8 | Jobsheet 8 – MongoDB dan Database Server | Implementasi database MongoDB dan operasi CRUD. |
 | 9 | Jobsheet 9 – Socket Programming | Komunikasi real-time menggunakan WebSocket dan Socket.IO. |
-
----
-
-## 🗂️ Struktur Repository
-
-23343002_Praktikum-Pemrograman-Jaringan
-├── Jobsheet 1 - Pengantar NodeJS
-├── Jobsheet 2 - Node.Js Module System
-├── Jobsheet 3 - HTTP Request and API
-├── Jobsheet 4 - JavaScript Essentials
-├── Jobsheet 5 - Web Server dan ExpressJs
-├── Jobsheet 6 - JSON HTTP Endpoints
-├── Jobsheet 7 - Version Control dan App Deployment
-├── Jobsheet 8 - MongoDB and Database Server
-├── Jobsheet 9 - Socket Programming
-└── README.md
-
 
 ---
 
