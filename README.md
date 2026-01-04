@@ -60,7 +60,6 @@ Tujuan dari praktikum ini adalah untuk:
 
 - Repositori ini digunakan sebagai **dokumentasi hasil praktikum**.
 - Setiap jobsheet memiliki README tersendiri untuk penjelasan detail.
-- Screenshot digunakan sebagai **bukti pengujian program**.
 
 ---
 
